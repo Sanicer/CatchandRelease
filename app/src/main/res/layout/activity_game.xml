@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:id="@+id/GameActivity_Layout">
+
+    <ImageView
+        android:id="@+id/cannon"
+        android:src="@drawable/cannon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/countdownTimer"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:id="@+id/score"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/arrow_down_btn"
+        android:src="@drawable/arrow_down_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="10dp"/>
+
+    <ImageView
+        android:id="@+id/shoot_btn"
+        android:src="@drawable/shoot_btn_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/arrow_down_btn"
+        android:layout_alignStart="@+id/arrow_up_btn"
+        android:paddingRight="10dp"/>
+
+    <ImageView
+        android:id="@+id/arrow_up_btn"
+        android:src="@drawable/arrow_up_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/shoot_btn"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="10dp"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/custom_progressbar"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_above="@+id/countdownTimer"
+        android:layout_toEndOf="@+id/cannon"
+        android:id="@+id/power_Bar" />
+
+</RelativeLayout>

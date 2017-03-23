@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sanics.catchandrelease.ScrabbleActivity">
+
+    <!-- Letters begin -->
+    <ImageView
+        android:id="@+id/letter_a"
+        android:src="@drawable/letter_a"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/letter_b"
+        android:src="@drawable/letter_b"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/letter_a" />
+
+    <ImageView
+        android:id="@+id/letter_c"
+        android:src="@drawable/letter_c"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/letter_b" />
+
+    <ImageView
+        android:id="@+id/letter_d"
+        android:src="@drawable/letter_d"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/letter_c" />
+
+    <ImageView
+        android:id="@+id/letter_e"
+        android:src="@drawable/letter_e"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/letter_d" />
+
+    <ImageView
+        android:id="@+id/letter_f"
+        android:src="@drawable/letter_f"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/letter_e" />
+
+    <ImageView
+        android:id="@+id/letter_g"
+        android:src="@drawable/letter_g"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/letter_f" />
+
+    <ImageView
+        android:id="@+id/letter_h"
+        android:src="@drawable/letter_h"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/letter_g" />
+
+    <ImageView
+        android:id="@+id/letter_i"
+        android:src="@drawable/letter_i"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/letter_h" />
+
+    <ImageView
+        android:id="@+id/letter_j"
+        android:src="@drawable/letter_j"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/letter_i" />
+
+    <ImageView
+        android:id="@+id/letter_k"
+        android:src="@drawable/letter_k"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/letter_j" />
+
+    <ImageView
+        android:id="@+id/letter_l"
+        android:src="@drawable/letter_l"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/letter_k" />
+
+    <ImageView
+        android:id="@+id/letter_m"
+        android:src="@drawable/letter_m"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/letter_l" />
+
+    <ImageView
+        android:id="@+id/letter_n"
+        android:src="@drawable/letter_n"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/letter_a_count"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/letter_o"
+        android:src="@drawable/letter_o"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/letter_a_count"
+        android:layout_toEndOf="@+id/letter_a_count" />
+
+    <ImageView
+        android:id="@+id/letter_p"
+        android:src="@drawable/letter_p"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/letter_b_count"
+        android:layout_toEndOf="@+id/letter_o" />
+
+    <ImageView
+        android:id="@+id/letter_q"
+        android:src="@drawable/letter_q"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/letter_c_count"
+        android:layout_toEndOf="@+id/letter_p" />
+
+    <ImageView
+        android:id="@+id/letter_r"
+        android:src="@drawable/letter_r"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/letter_d_count"
+        android:layout_toEndOf="@+id/letter_q" />
+
+    <ImageView
+        android:id="@+id/letter_s"
+        android:src="@drawable/letter_s"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/letter_e_count"
+        android:layout_toEndOf="@+id/letter_r" />
+
+    <ImageView
+        android:id="@+id/letter_t"
+        android:src="@drawable/letter_t"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/letter_f_count"
+        android:layout_toEndOf="@+id/letter_s" />
+
+    <ImageView
+        android:id="@+id/letter_u"
+        android:src="@drawable/letter_u"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/letter_t"
+        android:layout_toEndOf="@+id/letter_t" />
+
+    <ImageView
+        android:id="@+id/letter_v"
+        android:src="@drawable/letter_v"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/letter_u"
+        android:layout_toEndOf="@+id/letter_u" />
+
+    <ImageView
+        android:id="@+id/letter_w"
+        android:src="@drawable/letter_w"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/letter_v"
+        android:layout_toEndOf="@+id/letter_v" />
+
+    <ImageView
+        android:id="@+id/letter_x"
+        android:src="@drawable/letter_x"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/letter_w"
+        android:layout_toEndOf="@+id/letter_w" />
+
+    <ImageView
+        android:id="@+id/letter_y"
+        android:src="@drawable/letter_y"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/letter_x"
+        android:layout_toEndOf="@+id/letter_x" />
+
+    <ImageView
+        android:id="@+id/letter_z"
+        android:src="@drawable/letter_z"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/letter_y"
+        android:layout_toEndOf="@+id/letter_y" />
+    <!-- Letters end -->
+
+    <!-- Letter numbers begin -->
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_a_count"
+        android:layout_below="@id/letter_a"
+        android:layout_alignParentLeft="true"
+        android:text="0" />
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_b_count"
+        android:layout_below="@id/letter_b"
+        android:layout_toRightOf="@id/letter_a_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_c_count"
+        android:layout_below="@id/letter_c"
+        android:layout_toRightOf="@id/letter_b_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_d_count"
+        android:layout_below="@id/letter_d"
+        android:layout_toRightOf="@id/letter_c_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_e_count"
+        android:layout_below="@id/letter_e"
+        android:layout_toRightOf="@id/letter_d_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_f_count"
+        android:layout_below="@id/letter_f"
+        android:layout_toRightOf="@id/letter_e_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_g_count"
+        android:layout_below="@id/letter_g"
+        android:layout_toRightOf="@id/letter_f_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_h_count"
+        android:layout_below="@id/letter_h"
+        android:layout_toRightOf="@id/letter_g_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_i_count"
+        android:layout_below="@id/letter_i"
+        android:layout_toRightOf="@id/letter_h_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_j_count"
+        android:layout_below="@id/letter_j"
+        android:layout_toRightOf="@id/letter_i_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_k_count"
+        android:layout_below="@id/letter_k"
+        android:layout_toRightOf="@id/letter_j_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_l_count"
+        android:layout_below="@id/letter_l"
+        android:layout_toRightOf="@id/letter_k_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_m_count"
+        android:layout_below="@id/letter_m"
+        android:layout_toRightOf="@id/letter_l_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_n_count"
+        android:text="0"
+        android:layout_below="@+id/letter_n"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_o_count"
+        android:layout_below="@id/letter_o"
+        android:layout_toRightOf="@id/letter_n_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_p_count"
+        android:layout_below="@id/letter_p"
+        android:layout_toRightOf="@id/letter_o_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_q_count"
+        android:layout_below="@id/letter_q"
+        android:layout_toRightOf="@id/letter_p_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_r_count"
+        android:layout_below="@id/letter_r"
+        android:layout_toRightOf="@id/letter_q_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_s_count"
+        android:layout_below="@id/letter_s"
+        android:layout_toRightOf="@id/letter_r_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_t_count"
+        android:layout_below="@id/letter_t"
+        android:layout_toRightOf="@id/letter_s_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_u_count"
+        android:layout_below="@id/letter_u"
+        android:layout_toRightOf="@id/letter_t_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_v_count"
+        android:layout_below="@id/letter_v"
+        android:layout_toRightOf="@id/letter_u_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_w_count"
+        android:layout_below="@id/letter_w"
+        android:layout_toRightOf="@id/letter_v_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_x_count"
+        android:layout_below="@id/letter_x"
+        android:layout_toRightOf="@id/letter_w_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_y_count"
+        android:layout_below="@id/letter_y"
+        android:layout_toRightOf="@id/letter_x_count"
+        android:text="0"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/letter_z_count"
+        android:layout_below="@id/letter_z"
+        android:layout_toRightOf="@id/letter_y_count"
+        android:text="0"/>
+    <!-- Letter numbers end -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/textView"
+        android:layout_below="@+id/letter_n_count"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/letter_y_count"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/countdownTimer"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/deleteButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear All"
+        android:id="@+id/clearAllButton"
+        android:layout_alignBottom="@+id/deleteButton"
+        android:layout_toEndOf="@+id/deleteButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submitButton"
+        android:layout_alignBottom="@+id/clearAllButton"
+        android:layout_toEndOf="@+id/clearAllButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/score"
+        android:layout_above="@+id/submitButton"
+        android:layout_alignEnd="@+id/letter_z_count" />
+
+</RelativeLayout>
